@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   viewBox="0 0 48 48.000001"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="app_icon.small.svg"
+   inkscape:export-filename="C:\Users\sokol\Разработка\Wiper\Images\app_icon.24.png"
+   inkscape:export-xdpi="45"
+   inkscape:export-ydpi="45">
+  <title
+     id="title4221">Wiper File Icon</title>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="8.0000004"
+     inkscape:cx="-1.0937564"
+     inkscape:cy="27.161988"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     showborder="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="false"
+     borderlayer="false"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid5416"
+       empspacing="4"
+       originx="0px"
+       originy="0px"
+       spacingx="1px"
+       dotted="false"
+       visible="true" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="24,48"
+       id="guide5966" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="24,44"
+       id="guide5968" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="0,39.000001"
+       id="guide5970" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="4,24"
+       id="guide5972" />
+    <sodipodi:guide
+       orientation="-4.1666667e-009,-1"
+       position="24,4"
+       id="guide5974" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="24,0"
+       id="guide5976"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="48,24"
+       id="guide5978"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="44,24"
+       id="guide5980" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4">
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect4219"
+       is_visible="true"
+       offset_points="0,0.5"
+       sort_points="true"
+       interpolator_type="CubicBezierJohan"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="round"
+       miter_limit="4"
+       end_linecap_type="zerowidth"
+       cusp_linecap_type="round" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4217"
+       is_visible="true" />
+    <linearGradient
+       gradientTransform="matrix(1.4285714,0,0,1.4285711,1.1428579,1.142857)"
+       gradientUnits="userSpaceOnUse"
+       y2="26.921576"
+       x2="25.003279"
+       y1="4.3184276"
+       x1="8.0135775"
+       id="linearGradient4148"
+       xlink:href="#linearGradient4405"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4405">
+      <stop
+         style="stop-color:#1d99f3;stop-opacity:1"
+         offset="0"
+         id="stop4407" />
+      <stop
+         style="stop-color:#3daee9;stop-opacity:1"
+         offset="1"
+         id="stop4409" />
+    </linearGradient>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter4580">
+      <feFlood
+         flood-opacity="0.0784314"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood4582" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="out"
+         result="composite1"
+         id="feComposite4584" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0"
+         result="blur"
+         id="feGaussianBlur4586" />
+      <feOffset
+         dx="0"
+         dy="-1"
+         result="offset"
+         id="feOffset4588" />
+      <feComposite
+         in="offset"
+         in2="SourceGraphic"
+         operator="atop"
+         result="composite2"
+         id="feComposite4590" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Wiper File Icon</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="back_circle"
+     style="display:inline">
+    <circle
+       cy="24"
+       cx="24"
+       id="path4141"
+       style="display:inline;opacity:1;fill:#1da7f3;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.03399992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-xdpi="216"
+       inkscape:export-ydpi="216"
+       r="24" />
+    <circle
+       inkscape:export-ydpi="216"
+       inkscape:export-xdpi="216"
+       style="display:inline;opacity:1;fill:url(#linearGradient4148);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.03399992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4580)"
+       id="circle4480"
+       cx="24"
+       cy="24"
+       r="0" />
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.70438039;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 35.80387,8.4962715 c -0.949912,-3.899e-4 -1.899756,0.3669252 -2.619412,1.1014529 l -6.806381,6.9472546 c -3.260165,-0.854339 -6.749034,-0.669752 -8.962343,1.532755 l -0.0046,0.0047 -0.0046,0.0023 c -0.877916,0.896085 -2.25101,1.985902 -3.725789,2.738555 -1.474778,0.75265 -3.031569,1.147168 -4.3005611,0.888115 l -1.876542,-0.382627 0.7769627,1.785509 c 2.5487844,5.853456 3.8390254,8.892403 6.0067014,11.104941 2.167675,2.212542 4.993722,3.356529 10.364057,5.586095 l 1.660702,0.691015 -0.31124,-1.801741 c -0.38884,-2.25117 1.42524,-5.590064 3.116941,-7.536241 0.119219,-0.105755 0.238736,-0.212355 0.352134,-0.324639 l 0.0046,-0.0047 0.0046,-0.0047 c 2.284547,-2.331756 3.016736,-5.746879 2.067359,-8.857981 l 6.879108,-7.018979 c 1.439291,-1.469118 1.43657,-3.87874 -0.0023,-5.3472724 C 37.703885,8.8658378 36.753765,8.4967322 35.803855,8.4963367 Z"
+       id="rect3385-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccscccscccccccccccc" />
+  </g>
+</svg>
