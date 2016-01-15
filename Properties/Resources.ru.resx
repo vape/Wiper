@@ -153,4 +153,10 @@
   <data name="MainForm_ContextOptionCheckboxText" xml:space="preserve">
     <value>Показывать опцию в контекстном меню проводника</value>
   </data>
+  <data name="Program_Confirmation" xml:space="preserve">
+    <value>Вы уверены?</value>
+  </data>
+  <data name="Program_ConfirmationVerbose" xml:space="preserve">
+    <value>Вы уверены что хотите стереть файл без возможности восстановления?</value>
+  </data>
 </root>

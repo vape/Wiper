@@ -42,6 +42,9 @@ namespace Wiper
 
             if (args.Length > 0 && File.Exists(args[0]))
             {
+                if (Dialogs.Question(Resources.Program_Confirmation, Resources.Program_ConfirmationVerbose) == DialogResult.No)
+                    return;
+
                 WipeFile(args[0]);
                 Application.Run();
             }

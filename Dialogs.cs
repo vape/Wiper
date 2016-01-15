@@ -7,6 +7,11 @@ namespace Wiper
 {
     public static class Dialogs
     {
+        public static DialogResult Question(string title, string question)
+        {
+            return MessageBox.Show(question, title, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+        }
+
         public static DialogResult Info(string title, string info)
         {
             return MessageBox.Show(info, title, MessageBoxButtons.OK, MessageBoxIcon.Asterisk);

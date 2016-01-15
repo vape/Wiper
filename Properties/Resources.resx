@@ -157,4 +157,10 @@
   <data name="MainForm_ContextOptionCheckboxText" xml:space="preserve">
     <value>Show option in explorer context menu</value>
   </data>
+  <data name="Program_Confirmation" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
+  <data name="Program_ConfirmationVerbose" xml:space="preserve">
+    <value>Are you sure want to completely erase file?</value>
+  </data>
 </root>

@@ -125,6 +125,24 @@ namespace Wiper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Are you sure?.
+        /// </summary>
+        internal static string Program_Confirmation {
+            get {
+                return ResourceManager.GetString("Program_Confirmation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure want to completely erase file?.
+        /// </summary>
+        internal static string Program_ConfirmationVerbose {
+            get {
+                return ResourceManager.GetString("Program_ConfirmationVerbose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Wipe file.
         /// </summary>
         internal static string Program_ContextCommandText {
