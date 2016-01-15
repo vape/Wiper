@@ -16,9 +16,6 @@ namespace Wiper
 {
     static class Program
     {
-        private static string option = $"*\\shell\\wiper";
-        private static string command = $"{option}\\command";
-
         public static bool ContextOptionEnabled
         {
             get { return Registry.ClassesRoot.OpenSubKey(command) != null; }
@@ -31,6 +28,11 @@ namespace Wiper
                 return new WindowsPrincipal(WindowsIdentity.GetCurrent()).IsInRole(WindowsBuiltInRole.Administrator);
             }
         }
+
+        private static string option = $"*\\shell\\wiper";
+        private static string command = $"{option}\\command";
+
+        private const int passesCount = 2;
 
         [STAThread]
         static void Main(string[] args)
@@ -101,7 +103,7 @@ namespace Wiper
                     progressDialog.UpdateProgress(x.PercentProgress);
                 progressDialog.Show();
 
-                await Task.Run(() => Wipe.WipeFile(new FileInfo(fileName), 1, progressChangedCallback, tokenSource.Token));
+                await Task.Run(() => Wipe.WipeFile(new FileInfo(fileName), passesCount, progressChangedCallback, tokenSource.Token));
                 Dialogs.Info(Resources.Program_OperationCompleted, Resources.Program_OperationCompletedVerbose);
             }
             catch (UnauthorizedAccessException)
