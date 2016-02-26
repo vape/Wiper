@@ -159,4 +159,10 @@
   <data name="Program_ConfirmationVerbose" xml:space="preserve">
     <value>Вы уверены что хотите стереть файл без возможности восстановления?</value>
   </data>
+  <data name="MainForm_RestartButton" xml:space="preserve">
+    <value>Перезапустить</value>
+  </data>
+  <data name="MainForm_NumberOfPassesLabel" xml:space="preserve">
+    <value>Количество проходов</value>
+  </data>
 </root>

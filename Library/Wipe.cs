@@ -3,6 +3,8 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Threading;
 
+using Wiper.Properties;
+
 namespace Wiper.Library
 {
     public static class Wipe
@@ -56,6 +58,9 @@ namespace Wiper.Library
                 fileStream.SetLength(0);
             }
 
+            Settings.Default.LastFileDrive = Path.GetPathRoot(fileInfo.FullName);
+
+            fileInfo.MoveTo(Path.Combine(fileInfo.DirectoryName, Guid.NewGuid().ToString()));
             fileInfo.Delete();
         }
     }

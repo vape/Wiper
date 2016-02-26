@@ -1,6 +1,4 @@
-﻿using System;
-using System.Windows.Forms;
-using Wiper.Library;
+﻿using System.Windows.Forms;
 
 namespace Wiper
 {
@@ -33,49 +31,19 @@ namespace Wiper
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.mainTabs = new System.Windows.Forms.TabControl();
-            this.settingsTab = new System.Windows.Forms.TabPage();
-            this.contextMenuOptionCheckbox = new System.Windows.Forms.CheckBox();
             this.okButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
             this.githubLink = new System.Windows.Forms.LinkLabel();
-            this.mainTabs.SuspendLayout();
+            this.restartButton = new System.Windows.Forms.Button();
+            this.settingsTab = new System.Windows.Forms.TabPage();
+            this.contextMenuOptionCheckbox = new System.Windows.Forms.CheckBox();
+            this.passesCountLabel = new System.Windows.Forms.Label();
+            this.passesCount = new System.Windows.Forms.NumericUpDown();
+            this.mainTabs = new System.Windows.Forms.TabControl();
             this.settingsTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.passesCount)).BeginInit();
+            this.mainTabs.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // mainTabs
-            // 
-            this.mainTabs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.mainTabs.Controls.Add(this.settingsTab);
-            this.mainTabs.Location = new System.Drawing.Point(12, 12);
-            this.mainTabs.Name = "mainTabs";
-            this.mainTabs.SelectedIndex = 0;
-            this.mainTabs.Size = new System.Drawing.Size(332, 118);
-            this.mainTabs.TabIndex = 0;
-            // 
-            // settingsTab
-            // 
-            this.settingsTab.Controls.Add(this.contextMenuOptionCheckbox);
-            this.settingsTab.Location = new System.Drawing.Point(4, 22);
-            this.settingsTab.Name = "settingsTab";
-            this.settingsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.settingsTab.Size = new System.Drawing.Size(324, 92);
-            this.settingsTab.TabIndex = 0;
-            this.settingsTab.Text = "Settings";
-            this.settingsTab.UseVisualStyleBackColor = true;
-            // 
-            // contextMenuOptionCheckbox
-            // 
-            this.contextMenuOptionCheckbox.AutoSize = true;
-            this.contextMenuOptionCheckbox.Location = new System.Drawing.Point(6, 6);
-            this.contextMenuOptionCheckbox.Name = "contextMenuOptionCheckbox";
-            this.contextMenuOptionCheckbox.Size = new System.Drawing.Size(203, 17);
-            this.contextMenuOptionCheckbox.TabIndex = 1;
-            this.contextMenuOptionCheckbox.Text = "Show option in explorer context menu";
-            this.contextMenuOptionCheckbox.UseVisualStyleBackColor = true;
-            this.contextMenuOptionCheckbox.CheckedChanged += new System.EventHandler(this.contextMenuOptionCheckbox_CheckedChanged);
             // 
             // okButton
             // 
@@ -106,13 +74,92 @@ namespace Wiper
             // 
             this.githubLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.githubLink.AutoSize = true;
-            this.githubLink.Location = new System.Drawing.Point(19, 141);
+            this.githubLink.Location = new System.Drawing.Point(142, 141);
             this.githubLink.Name = "githubLink";
             this.githubLink.Size = new System.Drawing.Size(40, 13);
             this.githubLink.TabIndex = 3;
             this.githubLink.TabStop = true;
             this.githubLink.Text = "GitHub";
             this.githubLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.githubLink_LinkClicked);
+            // 
+            // restartButton
+            // 
+            this.restartButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.restartButton.Location = new System.Drawing.Point(12, 136);
+            this.restartButton.Name = "restartButton";
+            this.restartButton.Size = new System.Drawing.Size(113, 23);
+            this.restartButton.TabIndex = 4;
+            this.restartButton.Text = "Restart";
+            this.restartButton.UseVisualStyleBackColor = true;
+            this.restartButton.Click += new System.EventHandler(this.restartButton_Click);
+            // 
+            // settingsTab
+            // 
+            this.settingsTab.Controls.Add(this.passesCount);
+            this.settingsTab.Controls.Add(this.passesCountLabel);
+            this.settingsTab.Controls.Add(this.contextMenuOptionCheckbox);
+            this.settingsTab.Location = new System.Drawing.Point(4, 22);
+            this.settingsTab.Name = "settingsTab";
+            this.settingsTab.Padding = new System.Windows.Forms.Padding(3);
+            this.settingsTab.Size = new System.Drawing.Size(324, 92);
+            this.settingsTab.TabIndex = 0;
+            this.settingsTab.Text = "Settings";
+            this.settingsTab.UseVisualStyleBackColor = true;
+            // 
+            // contextMenuOptionCheckbox
+            // 
+            this.contextMenuOptionCheckbox.AutoSize = true;
+            this.contextMenuOptionCheckbox.Location = new System.Drawing.Point(6, 6);
+            this.contextMenuOptionCheckbox.Name = "contextMenuOptionCheckbox";
+            this.contextMenuOptionCheckbox.Size = new System.Drawing.Size(203, 17);
+            this.contextMenuOptionCheckbox.TabIndex = 1;
+            this.contextMenuOptionCheckbox.Text = "Show option in explorer context menu";
+            this.contextMenuOptionCheckbox.UseVisualStyleBackColor = true;
+            this.contextMenuOptionCheckbox.CheckedChanged += new System.EventHandler(this.contextMenuOptionCheckbox_CheckedChanged);
+            // 
+            // passesCountLabel
+            // 
+            this.passesCountLabel.AutoSize = true;
+            this.passesCountLabel.Location = new System.Drawing.Point(7, 30);
+            this.passesCountLabel.Name = "passesCountLabel";
+            this.passesCountLabel.Size = new System.Drawing.Size(92, 13);
+            this.passesCountLabel.TabIndex = 2;
+            this.passesCountLabel.Text = "Number of passes";
+            // 
+            // passesCount
+            // 
+            this.passesCount.Location = new System.Drawing.Point(10, 47);
+            this.passesCount.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.passesCount.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.passesCount.Name = "passesCount";
+            this.passesCount.Size = new System.Drawing.Size(120, 20);
+            this.passesCount.TabIndex = 3;
+            this.passesCount.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.passesCount.ValueChanged += new System.EventHandler(this.passesCount_ValueChanged);
+            // 
+            // mainTabs
+            // 
+            this.mainTabs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.mainTabs.Controls.Add(this.settingsTab);
+            this.mainTabs.Location = new System.Drawing.Point(12, 12);
+            this.mainTabs.Name = "mainTabs";
+            this.mainTabs.SelectedIndex = 0;
+            this.mainTabs.Size = new System.Drawing.Size(332, 118);
+            this.mainTabs.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -122,6 +169,7 @@ namespace Wiper
             this.BackColor = System.Drawing.SystemColors.Window;
             this.CancelButton = this.cancelButton;
             this.ClientSize = new System.Drawing.Size(356, 171);
+            this.Controls.Add(this.restartButton);
             this.Controls.Add(this.githubLink);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.okButton);
@@ -131,9 +179,10 @@ namespace Wiper
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Wiper";
-            this.mainTabs.ResumeLayout(false);
             this.settingsTab.ResumeLayout(false);
             this.settingsTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.passesCount)).EndInit();
+            this.mainTabs.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,12 +190,15 @@ namespace Wiper
 
         #endregion
 
-        private System.Windows.Forms.TabControl mainTabs;
-        private System.Windows.Forms.TabPage settingsTab;
-        private System.Windows.Forms.CheckBox contextMenuOptionCheckbox;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.LinkLabel githubLink;
+        private Button okButton;
+        private Button cancelButton;
+        private LinkLabel githubLink;
+        private Button restartButton;
+        private TabPage settingsTab;
+        private NumericUpDown passesCount;
+        private Label passesCountLabel;
+        private CheckBox contextMenuOptionCheckbox;
+        private TabControl mainTabs;
     }
 }
 

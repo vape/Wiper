@@ -32,8 +32,6 @@ namespace Wiper
         private static string option = $"*\\shell\\wiper";
         private static string command = $"{option}\\command";
 
-        private const int passesCount = 2;
-
         [STAThread]
         static void Main(string[] args)
         {
@@ -71,7 +69,7 @@ namespace Wiper
             Registry.ClassesRoot.DeleteSubKeyTree(option);
         }
 
-        private static void RestartAsAdmin(string arguments)
+        public static void RestartAsAdmin(string arguments)
         {
             bool exit = true;
 
@@ -106,7 +104,7 @@ namespace Wiper
                     progressDialog.UpdateProgress(x.PercentProgress);
                 progressDialog.Show();
 
-                await Task.Run(() => Wipe.WipeFile(new FileInfo(fileName), passesCount, progressChangedCallback, tokenSource.Token));
+                await Task.Run(() => Wipe.WipeFile(new FileInfo(fileName), Settings.Default.PassesCount, progressChangedCallback, tokenSource.Token));
                 Dialogs.Info(Resources.Program_OperationCompleted, Resources.Program_OperationCompletedVerbose);
             }
             catch (UnauthorizedAccessException)

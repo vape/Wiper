@@ -98,11 +98,29 @@ namespace Wiper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of passes.
+        /// </summary>
+        internal static string MainForm_NumberOfPassesLabel {
+            get {
+                return ResourceManager.GetString("MainForm_NumberOfPassesLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to OK.
         /// </summary>
         internal static string MainForm_OKButton {
             get {
                 return ResourceManager.GetString("MainForm_OKButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Restart.
+        /// </summary>
+        internal static string MainForm_RestartButton {
+            get {
+                return ResourceManager.GetString("MainForm_RestartButton", resourceCulture);
             }
         }
         

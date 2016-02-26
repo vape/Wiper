@@ -8,6 +8,7 @@ namespace Wiper.Library
     {
         public static void AddUACIcon(this Button button)
         {
+            button.FlatStyle = FlatStyle.System;
             SendMessage(button.Handle, BCM_SETSHIELD, 0, 1);
         }
 

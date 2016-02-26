@@ -163,4 +163,10 @@
   <data name="Program_ConfirmationVerbose" xml:space="preserve">
     <value>Are you sure want to completely erase file?</value>
   </data>
+  <data name="MainForm_RestartButton" xml:space="preserve">
+    <value>Restart</value>
+  </data>
+  <data name="MainForm_NumberOfPassesLabel" xml:space="preserve">
+    <value>Number of passes</value>
+  </data>
 </root>
